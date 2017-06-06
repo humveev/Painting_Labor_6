@@ -8,6 +8,9 @@
 #include "Painting.h"
 #include "MainFrm.h"
 #include "DlgTriangle.h"
+#include "DlgCircle.h"
+#include "DlgOblong.h"
+#include "DlgSquare.h"
 #include "ChildFrm.h"
 #include "PaintingDoc.h"
 #include "PaintingView.h"
@@ -27,6 +30,9 @@ BEGIN_MESSAGE_MAP(CPaintingApp, CWinApp)
 	// Standarddruckbefehl "Seite einrichten"
 	ON_COMMAND(ID_FILE_PRINT_SETUP, &CWinApp::OnFilePrintSetup)
 	ON_COMMAND(ID_EINF32771, &CPaintingApp::OnTriangle)
+	ON_COMMAND(ID_EINF32772, &CPaintingApp::OnCircle)
+	ON_COMMAND(ID_Menu, &CPaintingApp::OnOblong)
+	ON_COMMAND(ID_EINF32774, &CPaintingApp::OnSquare)
 END_MESSAGE_MAP()
 
 
@@ -195,4 +201,28 @@ void CPaintingApp::OnTriangle()
 	// TODO: Add your command handler code here
 	CDlgTriangle triangleDlg;
 	triangleDlg.DoModal();
+}
+
+
+void CPaintingApp::OnCircle()
+{
+	// TODO: Add your command handler code here
+	CDlgCircle circleDlg;
+	circleDlg.DoModal();
+}
+
+
+void CPaintingApp::OnOblong()
+{
+	// TODO: Add your command handler code here
+	CDlgOblong oblongDlg;
+	oblongDlg.DoModal();
+}
+
+
+void CPaintingApp::OnSquare()
+{
+	// TODO: Add your command handler code here
+	CDlgSquare squareDlg;
+	squareDlg.DoModal();
 }

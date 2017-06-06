@@ -19,6 +19,8 @@ class Circle : public Shape
     virtual double getCircumference();
     virtual void Draw(CDC* pDC);
 
+	virtual void Serialize(CArchive& ar);
+	DECLARE_SERIAL(Circle)
 
 private:
     int radius;

@@ -29,6 +29,9 @@ public:
 	afx_msg void OnAppAbout();
 	void OnTriangle();
 	DECLARE_MESSAGE_MAP()
+	afx_msg void OnCircle();
+	afx_msg void OnOblong();
+	afx_msg void OnSquare();
 };
 
 extern CPaintingApp theApp;

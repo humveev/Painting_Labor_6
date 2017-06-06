@@ -18,6 +18,9 @@ class Oblong : public Shape
     virtual double getCircumference();
     virtual void Draw(CDC* pDC);
 
+	virtual void Serialize(CArchive& ar);
+	DECLARE_SERIAL(Oblong)
+
   private:
     Dot A;
     Dot B;

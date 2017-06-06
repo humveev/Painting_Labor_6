@@ -18,6 +18,9 @@ class Square : public Shape
     double getCircumference();
     void Draw(CDC* pDC);
 
+	virtual void Serialize(CArchive& ar);
+	DECLARE_SERIAL(Square)
+
   private:
     Dot A;
     Dot B;

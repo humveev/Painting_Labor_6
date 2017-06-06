@@ -85,3 +85,16 @@ void Square::Draw(CDC* pDC)
 	c.Draw(pDC);
 	d.Draw(pDC);
 }
+
+//////////////////////////////////////////////////////////////////////
+// Speicherungsfunktionen
+//////////////////////////////////////////////////////////////////////
+IMPLEMENT_SERIAL(Square, CObject, 1)
+void Square::Serialize(CArchive& ar)
+{
+	CObject::Serialize(ar);
+	A.Serialize(ar);
+	B.Serialize(ar);
+	C.Serialize(ar);
+	D.Serialize(ar);
+}

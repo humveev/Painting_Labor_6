@@ -183,6 +183,9 @@
   <ItemGroup>
     <ClInclude Include="ChildFrm.h" />
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="DlgCircle.h" />
+    <ClInclude Include="DlgOblong.h" />
+    <ClInclude Include="DlgSquare.h" />
     <ClInclude Include="DlgTriangle.h" />
     <ClInclude Include="Dot.h" />
     <ClInclude Include="MainFrm.h" />
@@ -202,6 +205,9 @@
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp" />
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="DlgCircle.cpp" />
+    <ClCompile Include="DlgOblong.cpp" />
+    <ClCompile Include="DlgSquare.cpp" />
     <ClCompile Include="DlgTriangle.cpp" />
     <ClCompile Include="Dot.cpp" />
     <ClCompile Include="MainFrm.cpp" />

@@ -74,3 +74,19 @@ void Circle::Draw(CDC* pDC)
 	
 	g.DrawEllipse(myPen, ReferencePoint.x(),ReferencePoint.y(),2*radius,2*radius);
 }
+
+
+//////////////////////////////////////////////////////////////////////
+// Speicherungsfunktionen
+//////////////////////////////////////////////////////////////////////
+IMPLEMENT_SERIAL(Circle, CObject, 1)
+void Circle::Serialize(CArchive& ar)
+{
+	CObject::Serialize(ar);
+	center.Serialize(ar);
+	
+	if (ar.IsStoring())
+		ar << radius;
+	else
+		ar >> radius;
+}
